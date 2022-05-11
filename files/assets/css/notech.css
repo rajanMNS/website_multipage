@@ -2040,12 +2040,13 @@ ul {
 }
 
 .main-slider h2 {
-  font-size: 150px;
+  font-size: 80px;
   color: var(--notech-white);
   font-weight: 700;
   line-height: 150px;
   margin-bottom: 40px;
   opacity: 0;
+  text-align: center;
   visibility: hidden;
   -webkit-transform: translateY(-120px);
   transform: translateY(-120px);
