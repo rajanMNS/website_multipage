@@ -50,7 +50,9 @@
 
 
 
-
+  // function showAlert(){
+  //   alert("rajan")
+  // }
 
 
   if ($(".listing-details__contact-info-phone").length) {
@@ -897,11 +899,11 @@
     }
     if ($(".scroll-to-top").length) {
       var strickyScrollPos = 100;
-      if ($(window).scrollTop() > strickyScrollPos) {
-        $(".scroll-to-top").fadeIn(500);
-      } else if ($(this).scrollTop() <= strickyScrollPos) {
-        $(".scroll-to-top").fadeOut(500);
-      }
+      // if ($(window).scrollTop() > strickyScrollPos) {
+        $(".scroll-to-top").fadeIn(0);
+      // } else if ($(this).scrollTop() <= strickyScrollPos) {
+      //   $(".scroll-to-top").fadeOut(500);
+      // }
     }
     OnePageMenuScroll();
   });

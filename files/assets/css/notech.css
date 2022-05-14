@@ -457,20 +457,34 @@ ul {
 /* scroll to top */
 .scroll-to-top {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: fit-content;
+  height: fit-content;
   background: var(--notech-base);
+  transition: all 100s ease-in-out;
   position: fixed;
   bottom: 40px;
   right: 40px;
   z-index: 99;
+  color: white;
+  border-color: black;
   text-align: center;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   display: none;
-  border-radius: 50%;
-  transition: all 0.4s ease;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 10px;
 }
+
+/* .button-text{
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+  background: var(--notech-base);
+} */
+
 
 .scroll-to-top i {
   color: #ffffff;
