@@ -17,7 +17,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
@@ -52,9 +54,83 @@
 
 </head>
 
+<script type="text/javascript">
+    function closeModal() {
+        $('#myModal').modal('hide');
+    }
+</script>
+
 <body>
 
-
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="justify-content: end;">
+                    <button onclick="closeModal()" style="border: none; background: none; font-size: 30px;"
+                        type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="section-title text-center">
+                            <div class="section-title__tagline-box">
+                                <span class="section-title__tagline">Send us email</span>
+                                <div class="section-title-shape">
+                                    <img src="assets/images/shapes/section-title-shape.png" alt="">
+                                </div>
+                            </div>
+                            <h2 class="section-title__title" style="color : var(--notech-base)">Feel free to write</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="contact-page__form">
+                                    <form action="assets/inc/sendemail.php"
+                                        class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="comment-form__input-box">
+                                                    <input type="text" placeholder="Your name" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="comment-form__input-box">
+                                                    <input type="email" placeholder="Email address" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="comment-form__input-box">
+                                                    <input type="text" placeholder="Phone number" name="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="comment-form__input-box">
+                                                    <input type="text" placeholder="Subject" name="Subject">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="comment-form__input-box text-message-box">
+                                                    <textarea name="message" placeholder="Write comment"></textarea>
+                                                </div>
+                                                <div class="comment-form__btn-box">
+                                                    <button type="submit" class="thm-btn comment-form__btn"
+                                                        style="margin-top: 50px;">Send a
+                                                        message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="preloader">
         <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
@@ -63,58 +139,59 @@
     <div class="page-wrapper">
         <header class="main-header clearfix">
             <nav class="main-menu clearfix">
-				<div class="main-menu__wrapper clearfix">
+                <div class="main-menu__wrapper clearfix">
 
-					<div class="main-menu__left main-menu__left--two">
-						<div class="main-menu__logo">
-						</div>
-						<div class="main-menu__main-menu-box main-menu__main-menu-box--two">
-							<a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-							<ul class="main-menu__list">
-								<li class="dropdown">
-									<a href="index.html">Home</a>
-								</li>
-								<li class="dropdown">
-									<a href="#">Pages</a>
-									<ul>
+                    <div class="main-menu__left main-menu__left--two">
+                        <div class="main-menu__logo">
+                        </div>
+                        <div class="main-menu__main-menu-box main-menu__main-menu-box--two">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="dropdown">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)">Our Company</a>
+                                    <ul>
                                         <li><a href="about.html">About Us</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
+                                        <li><a href="team.html">Founder Chairman</a></li>
+                                        <li><a href="pricing.html">Chairman & Managing Director</a></li>
+                                        <li><a href="gallery.html">Board of Directors</a></li>
+                                        <li><a href="faq.html">Board Committees</a></li>
+                                        <!-- <li><a href="404.html">404 Error</a></li> -->
                                     </ul>
-								</li>
-								<li class="dropdown">
-									<a href="services.html">Services</a>
-								</li>
-								<li class="dropdown">
-									<a href="projects-page-1.html">Projects</a>
-									
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="projects-page-1.html">Projects</a>
 
-					<div class="main-menu__right">
-						<div class="main-menu__search-call">
-							<div class="main-menu__call">
-								<div class="main-menu__call-icon">
-									<img src="assets/images/icon/main-menu-icon-comment.png" alt="">
-								</div>
-								<div class="main-menu__call-number">
-									<p>Have any question?</p>
-									<h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
-								</div>
-							</div>
-							<!-- <div class="main-menu__search-box">
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main-menu__right">
+                        <div class="main-menu__search-call">
+                            <div class="main-menu__call">
+                                <div class="main-menu__call-icon">
+                                    <img src="assets/images/icon/main-menu-icon-comment.png" alt="">
+                                </div>
+                                <div class="main-menu__call-number">
+                                    <p>Have any question?</p>
+                                    <h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
+                                </div>
+                            </div>
+                            <!-- <div class="main-menu__search-box">
 								<a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
 							</div> -->
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-				</div>
-			</nav>
+                </div>
+            </nav>
         </header>
 
         <div class="stricky-header stricked-menu main-menu">
@@ -242,14 +319,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-page__tab-main-faq">
-                                                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                                    <div class="accrodion-grp faq-one-accrodion"
+                                                        data-grp-name="faq-one-accrodion-1">
                                                         <div class="accrodion">
                                                             <div class="accrodion-title">
                                                                 <h4>What is a managed IT service provider?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -259,7 +341,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -269,7 +355,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -279,7 +369,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -289,7 +383,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -299,17 +397,26 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
                                                         <div class="accrodion last-chiled">
                                                             <div class="accrodion-title">
-                                                                <h4>What can you do if we hire a IT advisor for business?</h4>
+                                                                <h4>What can you do if we hire a IT advisor for
+                                                                    business?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -330,14 +437,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-page__tab-main-faq">
-                                                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                                    <div class="accrodion-grp faq-one-accrodion"
+                                                        data-grp-name="faq-one-accrodion-1">
                                                         <div class="accrodion">
                                                             <div class="accrodion-title">
                                                                 <h4>What is a managed IT service provider?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -347,7 +459,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -357,7 +473,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -367,7 +487,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -377,7 +501,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -387,17 +515,26 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
                                                         <div class="accrodion last-chiled">
                                                             <div class="accrodion-title">
-                                                                <h4>What can you do if we hire a IT advisor for business?</h4>
+                                                                <h4>What can you do if we hire a IT advisor for
+                                                                    business?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -418,14 +555,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-page__tab-main-faq">
-                                                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                                    <div class="accrodion-grp faq-one-accrodion"
+                                                        data-grp-name="faq-one-accrodion-1">
                                                         <div class="accrodion">
                                                             <div class="accrodion-title">
                                                                 <h4>What is a managed IT service provider?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -435,7 +577,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -445,7 +591,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -455,7 +605,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -465,7 +619,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -475,17 +633,26 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
                                                         <div class="accrodion last-chiled">
                                                             <div class="accrodion-title">
-                                                                <h4>What can you do if we hire a IT advisor for business?</h4>
+                                                                <h4>What can you do if we hire a IT advisor for
+                                                                    business?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -506,14 +673,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-page__tab-main-faq">
-                                                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                                    <div class="accrodion-grp faq-one-accrodion"
+                                                        data-grp-name="faq-one-accrodion-1">
                                                         <div class="accrodion">
                                                             <div class="accrodion-title">
                                                                 <h4>What is a managed IT service provider?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -523,7 +695,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -533,7 +709,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -543,7 +723,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -553,7 +737,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -563,17 +751,26 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
                                                         <div class="accrodion last-chiled">
                                                             <div class="accrodion-title">
-                                                                <h4>What can you do if we hire a IT advisor for business?</h4>
+                                                                <h4>What can you do if we hire a IT advisor for
+                                                                    business?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -594,14 +791,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-page__tab-main-faq">
-                                                    <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                                                    <div class="accrodion-grp faq-one-accrodion"
+                                                        data-grp-name="faq-one-accrodion-1">
                                                         <div class="accrodion">
                                                             <div class="accrodion-title">
                                                                 <h4>What is a managed IT service provider?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -611,7 +813,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -621,7 +827,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -631,7 +841,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -641,7 +855,11 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -651,17 +869,26 @@
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
                                                         <div class="accrodion last-chiled">
                                                             <div class="accrodion-title">
-                                                                <h4>What can you do if we hire a IT advisor for business?</h4>
+                                                                <h4>What can you do if we hire a IT advisor for
+                                                                    business?</h4>
                                                             </div>
                                                             <div class="accrodion-content">
                                                                 <div class="inner">
-                                                                    <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
+                                                                    <p>There are many variations of passages the
+                                                                        majority have suffered alteration in some fo
+                                                                        injected humour, or randomised words believable.
+                                                                        Phasellus a rhoncus erat. Vivamus vel eros vitae
+                                                                        est aliquet pellentesque vitae.</p>
                                                                 </div><!-- /.inner -->
                                                             </div>
                                                         </div>
@@ -747,11 +974,11 @@
 
         <!--Site Footer Start-->
         <footer class="site-footer">
-            <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms"
-            data-wow-duration="2500ms" style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
+            <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
             </div>
-            <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms"
-            data-wow-duration="2500ms" style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
+            <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+                style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
             </div>
             <div class="site-footer__top">
                 <div class="container">
@@ -921,9 +1148,14 @@
         <!-- /.search-popup__content -->
     </div>
     <!-- /.search-popup -->
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
+    <div id="contactButton" onclick="showContactUsDiv()" class="scroll-to-top">
+        <label style="margin-right: 10px;margin-left: 10px;">Contact Us</label><i class="fa fa-phone"></i>
+    </div>
+    <script type="text/javascript">
+        function showContactUsDiv() {
+            $("#myModal").modal("show");
+        }
+    </script>
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
